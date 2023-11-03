@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(var(--width), 20px);
+    margin: 20px;
+    max-width: 80%;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    padding: 14px 28px; /* Larger button size */
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#startButton {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#startButton:hover {
+    background-color: #45a049;
+}
+
+#pauseButton {
+    background-color: #f44336;
+    color: white;
+}
+
+#pauseButton:hover {
+    background-color: #d32f2f;
+}
+
+#clearButton {
+    background-color: #2196F3;
+    color: white;
+}
+
+#clearButton:hover {
+    background-color: #1976D2;
+}
+
+input[type="number"] {
+    padding: 14px 28px;
+    width: 80px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#resizeButton {
+    padding: 14px 28px; /* Larger button size */
+    font-size: 16px;
+    background-color: #777;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#resizeButton:hover {
+    background-color: #555;
+}
